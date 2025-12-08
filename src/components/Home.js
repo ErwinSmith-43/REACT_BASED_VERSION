@@ -41,7 +41,6 @@ const Home = ({ setUser }) => {
 
     return (
         <div>
-            {/* Dynamic Alert */}
             {alertMessage && (
                 <div className={`alert alert-${alertMessage.type} alert-dismissible fade show fixed-top w-75 mx-auto mt-3 shadow-lg`} style={{ zIndex: 2000 }}>
                     {alertMessage.text}
@@ -49,19 +48,18 @@ const Home = ({ setUser }) => {
                 </div>
             )}
 
-            {/* Carousel */}
             <div id="homeCarousel" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1" className="d-block w-100" style={{ height: "80vh", objectFit: "cover" }} alt="Tiffin" />
-                        <div className="carousel-caption d-none d-md-block p-3 rounded">
+                        <div className="carousel-caption d-none bg-dark bg-opacity-50 d-md-block p-3 rounded">
                             <h2>Delicious Homemade Tiffins</h2>
                             <p>Fresh, healthy and delivered to your doorstep.</p>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" className="d-block w-100" style={{ height: "80vh", objectFit: "cover" }} alt="Healthy" />
-                        <div className="carousel-caption d-none d-md-block p-3 rounded">
+                        <div className="carousel-caption d-none bg-dark bg-opacity-50 d-md-block p-3 rounded">
                             <h2>Healthy Choices</h2>
                             <p>Pick from our vegetarian and vegan options.</p>
                         </div>
@@ -74,7 +72,7 @@ const Home = ({ setUser }) => {
                     <span className="carousel-control-next-icon"></span>
                 </button>
             </div>
-            {/* Registration Form */}
+
             <section className="py-5 bg-light" id="register">
                 <div className="container">
                     <h2 className="text-center mb-4 fw-bold">Join UrbanBite</h2>
@@ -109,7 +107,6 @@ const Home = ({ setUser }) => {
                 </div>
             </section>
 
-            {/* Success Modal */}
             <div className="modal fade" id="successModal" tabIndex="-1">
                 <div className="modal-dialog modal-dialog-centered">
                     <div className="modal-content border-success">

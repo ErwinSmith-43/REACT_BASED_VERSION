@@ -16,7 +16,6 @@ const Menu = () => {
     <div className="container py-5">
       <h2 className="text-center mb-4 fw-bold">📅 Weekly Planner</h2>
       
-      {/* Day Selector Tabs */}
       <ul className="nav nav-pills justify-content-center mb-4">
         {days.map(day => (
           <li className="nav-item" key={day}>
@@ -30,7 +29,6 @@ const Menu = () => {
         ))}
       </ul>
 
-      {/* Menu Cards */}
       <div className="row justify-content-center">
         <div className="col-md-8">
           <div className="card shadow border-0 rounded-4">
