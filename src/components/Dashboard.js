@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Dashboard = ({ user }) => {
     return (
         <div className="container py-5">

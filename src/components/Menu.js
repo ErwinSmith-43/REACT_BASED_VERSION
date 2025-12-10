@@ -1,13 +1,15 @@
-import React, { useState } from 'react';
-
+import { useState } from 'react';
 const Menu = () => {
   const [CurrentDay, setCurrentDay] = useState('Monday');
   const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
   const menuData = {
     Monday: { lunch: "Rajma Chawal + Jeera Aloo", dinner: "Mix Veg + 4 Rotis + Dal Fry" },
-    Tuesday: { lunch: "Kadi Pakoda + Rice", dinner: "Paneer Butter Masala + Naan" },
+    Tuesday: { lunch: "Aloo Parantha", dinner: "Paneer Butter Masala + Naan" },
     Wednesday: { lunch: "Chole Kulche", dinner: "Egg Curry / Malai Kofta + Rice" },
+     Thursday: { lunch: "Rajma Chawal + Jeera Aloo", dinner: "Mix Veg + 2 Rotis + Dal Fry" },
+    Friday: { lunch: "Kadi Pakoda + jeera Rice", dinner: "Paneer lababdar + Naan" },
+    Saturday: { lunch: "Chole Puri", dinner: "Egg Curry / Malai Kofta + Jeera Rice" },
   };
 
   const currentMenu = menuData[CurrentDay] || { lunch: "nahi socha", dinner: "nahi socha" };
